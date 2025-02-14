@@ -1,0 +1,23 @@
+.address-view {
+    margin-bottom: 2rem;
+}
+
+.address-view .sort-buttons {
+    margin-bottom: 10px;
+}
+
+.address-view .sort-buttons button {
+    margin-right: 10px;
+    padding: 0.5em 1.5em;
+    font-size: 1em;
+    color: #fff;
+    background-color: #5cb85c;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.address-view .sort-buttons button:hover {
+    background-color: #4cae4c;
+}

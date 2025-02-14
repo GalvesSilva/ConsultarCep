@@ -1,0 +1,36 @@
+.address-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.address-table th,
+.address-table td {
+    padding: 16px;
+    text-align: left;
+    font-size: 1em;
+    border-bottom: 1px solid #ddd;
+}
+
+.address-table th {
+    background-color: #f8f8f8;
+    font-weight: bold;
+    color: #555;
+}
+
+.address-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.address-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.address-table .empty-message {
+    text-align: center;
+    color: #888;
+    padding: 20px;
+}
