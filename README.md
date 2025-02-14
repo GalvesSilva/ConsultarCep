@@ -33,11 +33,11 @@ Um sistema integrado para consulta de endereços via CEP utilizando a API do Via
    composer install
    
 3. Configure o ambiente:
-    ```bash
-   cp .env .env.local
-  Edite o .env.local com suas configurações de banco de dados:
-    ```ini
-    DATABASE_URL="mysql://usuario:senha@127.0.0.1:3306/nome_banco?serverVersion=8.0&charset=utf8mb4" APP_ENV=dev
+    Crie ou edite o arquivo `.env.local` com:
+   ```bash
+   # .env.local
+   DATABASE_URL="mysql://usuario:senha@127.0.0.1:3306/nome_banco?serverVersion=8.0&charset=utf8mb4"
+   APP_ENV=dev
 
 4. Crie o banco de dados e execute as migrations:
    ```bash
