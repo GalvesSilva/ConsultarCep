@@ -23,14 +23,56 @@ Um sistema integrado para consulta de endereços via CEP utilizando a API do Via
 ## 🔧 Instalação
 
 ### Backend (Symfony)
-```bash
-git clone [URL_DO_REPOSITORIO]
-cd projeto/backend
-composer install
+1. Clone o repositório:
+   ```bash
+   git clone [URL_DO_REPOSITORIO]
+   cd projeto/backend
 
-# Configurar .env.local com suas credenciais de banco
-cp .env .env.local
+2. Instale as dependências::
+   ```bash
+   composer install
+   
+3. Configure o ambiente:
+    ```bash
+   cp .env .env.local
+  Edite o .env.local com suas configurações de banco de dados:
+    ```ini
+    DATABASE_URL="mysql://usuario:senha@127.0.0.1:3306/nome_banco?serverVersion=8.0&charset=utf8mb4" APP_ENV=dev
 
-php bin/console doctrine:database:create
-php bin/console doctrine:migrations:migrate
-symfony serve:start
+4. Crie o banco de dados e execute as migrations:
+   ```bash
+     php bin/console doctrine:database:create
+     php bin/console doctrine:migrations:migrate
+
+5. Inicie o servidor:
+   ```bash
+     symfony serve:start
+
+### Instruções para Rodar o Frontend (React)
+
+1. **Acesse o diretório do frontend:**
+   ```bash
+   cd projeto/frontend
+
+2. Instale as dependências:
+   ```bash
+   npm install
+
+3. Inicie a aplicação:
+   ```bash
+   npm run dev
+
+# Uso
+
+## Consulta de CEP
+
+1. Acesse [http://localhost:3000](http://localhost:3000)
+2. Insira um **CEP válido** (8 dígitos) no campo de busca.
+3. Clique em **"Buscar"**.
+
+## Listagem de Endereços
+
+1. Acesse a **listagem de endereços**.
+2. Utilize os **botões de ordenação** para organizar os resultados.
+3. Navegue entre as páginas usando a **paginação**.
+
